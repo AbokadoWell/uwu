@@ -24,8 +24,8 @@ ul { /*Listas (os resultados)*/
     display: block;
     margin: 10px;
     font-size: 16pt;
-    height: 59px;
-    width: 150px;
+    height: 60px;
+    width: 160px;
     padding: 1%;
     transition-duration: 0.3s;
     border-radius: 15%;
