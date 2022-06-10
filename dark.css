@@ -44,6 +44,7 @@ ul { /*Listas (os resultados)*/
 .pai button:hover, .botoes button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
     background-color: #ffffff;
     color: #252525;
+    cursor: pointer;
 }
 .cor { /*Style da div da cor tema*/
     position: fixed;
