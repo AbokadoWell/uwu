@@ -5,9 +5,10 @@ body { /*Tudo*/
 }
 h1 { /*Título*/
     color: #f3f3f3;
+    text-shadow: 0.5px 0.5px 5px #ffffff;
     text-align: center;
     font-family: verdana;
-    -webkit-text-stroke: 1.25px #666666;
+    -webkit-text-stroke: 1.5px #252525;
     margin-top: 30pt;
     margin-bottom: 25pt;
 }
@@ -16,6 +17,10 @@ ul { /*Listas (os resultados)*/
 }
 .result { /*Cor dos resultados*/
     color: #f3f3f3;
+}
+button{
+    cursor: pointer;
+    box-shadow: 0 3px #5b5b5b;
 }
 .pai button { /*Style dos botões principais*/
     color: #ffffff;
@@ -27,7 +32,7 @@ ul { /*Listas (os resultados)*/
     height: 60px;
     width: 160px;
     padding: 1%;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
     border-radius: 15%;
 }
 .botoes button { /*Style dos botões das letras*/
@@ -38,18 +43,8 @@ ul { /*Listas (os resultados)*/
     font-size: 14pt;
     height: 45px;
     width: 90px;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
     border-radius: 15%;
-}
-.pai button:hover, .botoes button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
-    background-color: #ffffff;
-    color: #252525;
-    cursor: pointer;
-}
-.cor { /*Style da div da cor tema*/
-    position: fixed;
-    right: 0.5%;
-    top: 2%;
 }
 .cor button { /*Style do botão de cor tema*/
     color: #ffffff;
@@ -60,6 +55,20 @@ ul { /*Listas (os resultados)*/
     font-size: 16pt;
     height: 45px;
     width: 90px;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
+    opacity: 10%;
     border-radius: 15%;
+    right: 0.5%;
+    top: 2%;
+    position: fixed;
+}
+.pai button:hover, .botoes button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
+    background-color: #ffffff;
+    color: #252525;
+    transition-duration: 0.3s;
+    opacity: 100%;
+}
+button:active {
+    box-shadow: 0 2px #5b5b5b;
+    transform: translateY(4px);
 }
